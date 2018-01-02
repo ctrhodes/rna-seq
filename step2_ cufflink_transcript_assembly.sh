@@ -8,6 +8,9 @@ GENOME_DIR="/genomes/fasta/hg38.90_withMito"
 GENOME_GTF="Homo_sapiens.GRCh38.90.gtf"
 GENOME_ANNO_DIR="/genomes/annotation/hg38.90_withMito"
 
+#deep RNA sequencing experiments often generate multiple fastq files.
+#following alignment, it is often advantageous to run cufflink transript assembly on each file and then merge all
+#transcripts (to allow detection of rare alternative splice events), such as with looped command below.
 
 cd $IN_DIR
 
