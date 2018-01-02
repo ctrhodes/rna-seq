@@ -26,7 +26,7 @@ do
 describer=$(echo ${sample} | sed 's/_R..fastq//')
 echo $sample
 echo $describer
-echo $GENOME
+echo $GENOME_INDEX
 
 #select analysis
 echo $describer endTophat
