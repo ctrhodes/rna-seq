@@ -3,8 +3,8 @@
 IN_DIR="/home/chris/project/rna/s1_fastq"
 OUT_DIR="/home/chris/project/rna/s2_aligned"
 
-GENOME="hg38.90_withMito"
-GENOME_DIR="/home/bowtie-1.1.1/indexes"
+GENOME_INDEX="hg38.90_withMito"
+INDEX_DIR="/home/bowtie-1.1.1/indexes"
 GENOME_GTF="Homo_sapiens.GRCh38.90.gtf"
 GENOME_ANNO_DIR="/genomes/annotation/hg38.90_withMito"
 
@@ -33,7 +33,7 @@ echo $describer endTophat
 
 #if only running non-paired RNA-Seq delete: "${describer}_R2.fastq" belox
 tophat2 -p 4 -o $OUT_DIR/${describer} -G $GENOME_ANNO_DIR/$GENOME_GTF -r $MATE_INNER --library-type fr-firststrand \
---bowtie1 $GENOME_DIR/$GENOME ${describer}_R1.fastq ${describer}_R2.fastq
+--bowtie1 $INDEX_DIR/$GENOME_INDEX ${describer}_R1.fastq ${describer}_R2.fastq
 
 echo $describer endTophat
 
