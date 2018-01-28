@@ -3,7 +3,7 @@ workflows for bulk rna-seq
 
 RNA-Seq wrkflows typically include an experimental (or "wet lab") step to generate samples and biological replicates for use in preparing sequencing libraries. The wet lab work is then followed by "dry lab" work including qc, alignement, transript assembly, etc and making biological insights using systems biology approaches.
 
-The general workflow for bulk RNA-Seq is below, adapted from here
+The general workflow for bulk RNA-Seq is below, adapted from [Han et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4648566/)
 
 ![Alt text](https://github.com/ctrhodes/rna-seq/blob/master/overview%20of%20bulk%20rna-seq%20workflow.jpg?raw=true)
 
