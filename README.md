@@ -5,14 +5,9 @@ RNA-Seq wrkflows typically include an experimental (or "wet lab") step to genera
 
 The general workflow for bulk RNA-Seq is below, adapted from here
 
-![Alt text](https://github.com/ctrhodes/chip-seq/blob/master/workflows.png?raw=true)
+![Alt text](https://github.com/ctrhodes/rna-seq/blob/master/overview%20of%20bulk%20rna-seq%20workflow.jpg?raw=true)
 
 This scripts in this repository provide a basic workflow for aligning paired-end RNA-seq reads to a reference genome and assembling a transcriptome.
-
-The basic steps are below (chip-seq steps shown in the image but ChIP-Seq scripts are in a seperate repository):
-
-![Alt text](https://github.com/ctrhodes/chip-seq/blob/master/workflows.png?raw=true)
-
 
 The scripts also require the following software be installed an in your path:
 
