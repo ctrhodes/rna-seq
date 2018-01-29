@@ -11,6 +11,6 @@ The general workflow for bulk RNA-Seq is below, adapted from [Han et al.](https:
 
 Historically, RNA-seq can be grouped into 3 approaches based on when the were developed: First came 1. gene-level counts, then 2. transcript abundance by true aligners, and later 3. transcript abundance by pseudo-aligners. Emerging theoretical and practical evidence strongly supports quantifying transcript abundance by pseudo-alignment over gene-level counting.
 
-Excellent tutorials for gene level counting for RNA-seq data have been covered [here](https://www.bioconductor.org/help/workflows/rnaseqGene/) and [here](https://www.bioconductor.org/help/workflows/RnaSeqGeneEdgeRQL/) and will not be covered further.
+Excellent tutorials for gene level counting for RNA-seq data have been covered [here](https://www.bioconductor.org/help/workflows/rnaseqGene/) and [here](https://www.bioconductor.org/help/workflows/RnaSeqGeneEdgeRQL/) and will not be discussed further by me.
 
 I will cover the computational biology steps of our RNA-Seq workflow using both true alignment methods and pseudo-alignment methods. Scripts for each method are stored seperately. We will cover transcript abundance by true alignment using the Tuxedo Suite (i.e. Bowtie, Cufflinks, Cuffdiff, etc) and pseudo-alignment using kallisto-sleuth. While I prefer kallisto-sleuth, at time of writing this, the 3 most populat pseudo-aligners (kallisto, salmon, and the revised sailfish) perform about the same. Use which ever best fits your analysis workflows.
